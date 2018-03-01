@@ -29,5 +29,7 @@ class ApplicationController < Sinatra::Base
     redirect '/'
   end
 
-
+  get '/admin' do
+    User.create(username: 'admin', password: 'admin', balance: 20.00)
+  end
 end

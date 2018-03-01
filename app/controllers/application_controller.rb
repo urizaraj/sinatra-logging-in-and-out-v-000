@@ -20,7 +20,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    @session = session
     erb :account
   end
 

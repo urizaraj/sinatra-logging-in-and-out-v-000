@@ -1,6 +1,6 @@
-<% if is_logged_in? %>
+<% if Helpers.is_logged_in? %>
 
-<% user = current_user(session) %>
+<% user = Helpers.current_user(session) %>
 
 <h1>
 <%= user.username %>
